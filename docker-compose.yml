@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  jenkins_test:
+    build: .
+    image: craigrmccown/jenkins-test
+    ports:
+      - '5000:5000'
+    environment:
+      FLASK_APP: /opt/app/app.py
