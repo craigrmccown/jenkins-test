@@ -1,6 +1,6 @@
 node {
     def image
-    def registry = 'fake.docker.registry.com'
+    def registry = 'fake.docker.registry.com:5000'
 
     stage('Clone') {
         checkout scm
